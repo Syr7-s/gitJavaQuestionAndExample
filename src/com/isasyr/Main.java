@@ -6,7 +6,7 @@ public class Main {
     private Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
         Main main=new Main();
-        System.out.println(main.triangleVarious());
+        System.out.println(main.letterGrade());
     }
     public double numberAverage(){
         //Klavyeden girilen 3 sayının ortalaması.
@@ -33,5 +33,20 @@ public class Main {
             return "scalene";
         else
             return "isosceles";
+    }
+    public String letterGrade(){
+        //midterm exam %40 and finalExam %60
+        int midtermExam;
+        int finalExam;
+        System.out.print("Enter Midterm Exam : ");
+        midtermExam=scanner.nextInt();
+        System.out.print("Enter Final Exam : ");
+        finalExam=scanner.nextInt();
+        if ((midtermExam*0.4+finalExam*0.6)<50)
+            return "failed";
+        else{
+            return "passed";
+        }
+
     }
 }
