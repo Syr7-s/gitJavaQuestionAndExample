@@ -6,7 +6,8 @@ public class Main {
     private Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
         Main main=new Main();
-        System.out.println(main.letterGrade());
+       // System.out.println(main.letterGrade());
+        main.writeYourNameFiveTimes();
     }
     public double numberAverage(){
         //Klavyeden girilen 3 sayının ortalaması.
@@ -46,7 +47,12 @@ public class Main {
             return "failed";
         else
             return "passed";
-        
-
+    }
+    public void writeYourNameFiveTimes(){
+        int i=0;
+        do {
+            System.out.println("İsa SAYAR");
+            ++i;
+        }while(i<5);
     }
 }
