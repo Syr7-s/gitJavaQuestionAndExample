@@ -46,7 +46,6 @@ public class Main {
             return "failed";
         else
             return "passed";
-        
-
     }
+
 }
