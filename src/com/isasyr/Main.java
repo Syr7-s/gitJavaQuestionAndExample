@@ -6,7 +6,9 @@ public class Main {
     private Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
         Main main=new Main();
-        System.out.println(main.factorialCompute(5));
+        String message=main.primeNumber(15) ? "it is Prime Number":"it is not Prime Number";
+        System.out.println(message);
+
     }
     public double numberAverage(){
         //Klavyeden girilen 3 sayının ortalaması.
@@ -61,5 +63,11 @@ public class Main {
             --number;
         }
         return factorialNumber;
+    }
+    public boolean primeNumber(int primeNumber){
+        for (int i=2;i<primeNumber;i++)
+            if (primeNumber%i==0)
+                return false;
+        return true;
     }
 }
