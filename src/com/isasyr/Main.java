@@ -6,7 +6,7 @@ public class Main {
     private Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
         Main main=new Main();
-        System.out.println(main.numberAverage());
+        System.out.println(main.triangleVarious());
     }
     public double numberAverage(){
         //Klavyeden girilen 3 sayının ortalaması.
@@ -17,5 +17,21 @@ public class Main {
         System.out.print("Third Number: ");
         int thirdNumber=scanner.nextInt();
         return (firstNumber+secondNumber+thirdNumber/3.0);
+    }
+    public String triangleVarious(){
+        //Klavyeden girilen bir ücegenin cesidini veren uygulama yazının.
+        int firstEdge,secondEdge,thirdEdge;
+        System.out.print("Enter firstEdge : ");
+        firstEdge=scanner.nextInt();
+        System.out.print("Enter secondEdge : ");
+        secondEdge=scanner.nextInt();
+        System.out.print("Enter thirdEdge : ");
+        thirdEdge=scanner.nextInt();
+        if (firstEdge == secondEdge && secondEdge == thirdEdge)
+            return "equilateral";
+        else if(firstEdge != secondEdge && secondEdge !=thirdEdge)
+            return "scalene";
+        else
+            return "isosceles";
     }
 }
