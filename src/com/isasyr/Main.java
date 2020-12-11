@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Main main=new Main();
        // System.out.println(main.letterGrade());
-        main.writeYourNameFiveTimes();
+        //main.writeYourNameFiveTimes();
+        System.out.println(main.factorialCompute(5));
     }
     public double numberAverage(){
         //Klavyeden girilen 3 sayının ortalaması.
@@ -54,5 +55,13 @@ public class Main {
             System.out.println("İsa SAYAR");
             ++i;
         }while(i<5);
+    }
+    public int factorialCompute(int number){
+        int factorialNumber=1;
+        while (number>0){
+            factorialNumber *=number;
+            --number;
+        }
+        return factorialNumber;
     }
 }
