@@ -44,9 +44,9 @@ public class Main {
         finalExam=scanner.nextInt();
         if ((midtermExam*0.4+finalExam*0.6)<50)
             return "failed";
-        else{
+        else
             return "passed";
-        }
+        
 
     }
 }
