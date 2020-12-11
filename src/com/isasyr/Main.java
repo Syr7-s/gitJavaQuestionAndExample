@@ -6,8 +6,6 @@ public class Main {
     private Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
         Main main=new Main();
-       // System.out.println(main.letterGrade());
-        //main.writeYourNameFiveTimes();
         System.out.println(main.factorialCompute(5));
     }
     public double numberAverage(){
